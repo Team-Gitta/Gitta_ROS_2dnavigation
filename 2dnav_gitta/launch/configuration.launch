@@ -1,0 +1,11 @@
+<launch>
+
+   <node pkg="ydlidar_ros" type="X4" name="ydlidar_x4" output="screen">
+ </node>
+ <node pkg="rf2o_laser_odometry" type="launch" name="rf2o_odom" output="screen">
+ </node>
+ <node pkg="hector_slam" type="transform_configuration_type" name="transform_configuration_name" output="screen">
+    <param name="transform_configuration_param" value="param_value" />
+ </node>
+
+</launch> 
